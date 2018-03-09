@@ -9,6 +9,7 @@ config :database, Database.Repo,
   password: "postgres",
   hostname: "localhost"
 
+config :database, ecto_repos: [ Database.Repo ]
 
 # This configuration is loaded before any dependency and is restricted
 # to this project. If another project depends on this project, this
